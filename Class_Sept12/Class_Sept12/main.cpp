@@ -10,6 +10,35 @@
 
 using namespace std;
 
+
+/***************************
+  Learning about pseudocode
+ 
+int diceGame(int guess) {
+    Die1 is random 1-6
+    Die2 is random 1-6
+    Ask user for guess
+    Store user input
+    Output sum of Die1 + Die2
+}
+ ***************************/
+/*
+int diceGame(int guess) {
+    int die1;
+    int die2;
+    int diceSum;
+    
+    // Get random values for dice
+    die1 = (rand() % 6) + 1;
+    die2 = (rand() % 6) + 1;
+    
+    // Calculate sum of dice
+    diceSum = die1 + die2;
+    
+    return diceSum;
+}
+ */
+
 int main() {
     /*
     // Single quote or apostrophe for characters
@@ -86,6 +115,8 @@ int main() {
     cout << madlibName << " is having a " << madlibTheme << " party!" << endl;
     cout << "It's going to be at " << madlibPlace << " on " << madlibDay << "." << endl;
     cout << "Please show up at " << madlibTime << " or else you will be required to " << madlibVerb << " a " << madlibAnimal << "." << endl;
+
+    
     
     return 0;
 }
