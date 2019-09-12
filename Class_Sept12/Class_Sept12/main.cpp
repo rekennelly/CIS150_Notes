@@ -11,7 +11,7 @@
 using namespace std;
 
 int main() {
-    
+    /*
     // Single quote or apostrophe for characters
     char myFirstLetter = 'E';
     char mySecondLetter = 'R';
@@ -43,6 +43,8 @@ int main() {
     
     cout << "Hi there, " << name << endl << endl;
     
+    */
+    
     /* ***********
      *  Madlibs  *
      *************/
@@ -57,26 +59,28 @@ int main() {
     string madlibVerb;
     string madlibAnimal;
     
-    cout << "Enter a name: " << endl;
-    cin >> madlibName;
+    // Using getline allows us to use spaces unlike cin
     
+    cout << "Enter a name: " << endl;
+    getline(cin, madlibName);
+
     cout << "Enter a theme: " << endl;
-    cin >> madlibTheme;
+    getline(cin, madlibTheme);
     
     cout << "Enter a place: " << endl;
-    cin >> madlibPlace;
+    getline(cin, madlibPlace);
     
     cout << "Enter a day of the week: " << endl;
-    cin >> madlibDay;
+    getline(cin, madlibDay);
     
     cout << "Enter a time: " << endl;
-    cin >> madlibTime;
+    getline(cin, madlibTime);
     
     cout << "Enter a verb: " << endl;
-    cin >> madlibVerb;
+    getline(cin, madlibVerb);
     
     cout << "Enter an animal: " << endl;
-    cin >> madlibAnimal;
+    getline(cin, madlibAnimal);
     
     cout << "Let's see how your madlib turned out!" << endl << endl;
     cout << madlibName << " is having a " << madlibTheme << " party!" << endl;
