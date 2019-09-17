@@ -90,6 +90,84 @@ int main() {
     else {
         cout << "F" << endl;
     }
+    
+    /********************
+     *** NEXT EXAMPLE ***
+     *******************/
+    
+    int age;
+    
+    cout << "Enter your age: " << endl;
+    cin >> age;
+    
+//    This method works, but it is inefficient
+//    
+//    if (age >= 18) {
+//        cout << "You can vote!" << endl;
+//        if (age >= 21) {
+//            cout << "You can buy alcohol!" << endl;
+//            if (age >= 23) {
+//                cout << "You can rent a car!" << endl;
+//            }
+//            else {
+//                cout << "You can't rent a car!" << endl;
+//            }
+//        }
+//    }
+//    else {
+//        cout << "You can't vote!" << endl;
+//        cout << "You can't buy alcohol!" << endl;
+//        cout << "You can't rent a car!" << endl;
+//    }
+    
+    if (age >= 23) {
+        cout << "You can rent a car!" << endl;
+    }
+    else {
+        cout << "You can't rent a car!" << endl;
+    }
+    if (age >= 21) {
+        cout << "You can buy alcohol!" << endl;
+    }
+    else {
+        cout << "You can't buy alcohol!" << endl;
+    }
+    if (age >= 18) {
+        cout << "You can vote!" << endl;
+    }
+    else {
+        cout << "You can't vote!" << endl;
+    }
+    
 
+    /********************
+     *** NEXT EXAMPLE ***
+     *******************/
+    // What should I wear today?
+    
+    int temperature;
+    char isRaining;
+    
+    cout << "What's the temperature?" << endl;
+    cin >> temperature;
+    
+    cout << "Is it raining? Y/N" << endl;
+    cin >> isRaining;
+    
+    if (temperature >= 50) {
+        cout << "You can wear short sleeves." << endl;
+    }
+    else if (temperature > 32) {
+        cout << "You might want a jacket." << endl;
+    }
+    else {
+        cout << "You should bring a coat." << endl;
+    }
+    
+    if (isRaining == 'Y' || isRaining == 'y') {        // || is equivalent to 'or'
+        cout << "Bring an umbrella!" << endl;
+    }
+    
+    
     return 0;
 }
