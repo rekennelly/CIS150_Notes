@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A01C477234678E70073A82C"
-               BuildableName = "Class_103"
-               BlueprintName = "Class_103"
-               ReferencedContainer = "container:Class_103.xcodeproj">
+               BlueprintIdentifier = "2A671C2323467A7E00602729"
+               BuildableName = "Class_Oct3_Project1Solution"
+               BlueprintName = "Class_Oct3_Project1Solution"
+               ReferencedContainer = "container:Class_Oct3_Project1Solution.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A01C477234678E70073A82C"
-            BuildableName = "Class_103"
-            BlueprintName = "Class_103"
-            ReferencedContainer = "container:Class_103.xcodeproj">
+            BlueprintIdentifier = "2A671C2323467A7E00602729"
+            BuildableName = "Class_Oct3_Project1Solution"
+            BlueprintName = "Class_Oct3_Project1Solution"
+            ReferencedContainer = "container:Class_Oct3_Project1Solution.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A01C477234678E70073A82C"
-            BuildableName = "Class_103"
-            BlueprintName = "Class_103"
-            ReferencedContainer = "container:Class_103.xcodeproj">
+            BlueprintIdentifier = "2A671C2323467A7E00602729"
+            BuildableName = "Class_Oct3_Project1Solution"
+            BlueprintName = "Class_Oct3_Project1Solution"
+            ReferencedContainer = "container:Class_Oct3_Project1Solution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A01C477234678E70073A82C"
-            BuildableName = "Class_103"
-            BlueprintName = "Class_103"
-            ReferencedContainer = "container:Class_103.xcodeproj">
+            BlueprintIdentifier = "2A671C2323467A7E00602729"
+            BuildableName = "Class_Oct3_Project1Solution"
+            BlueprintName = "Class_Oct3_Project1Solution"
+            ReferencedContainer = "container:Class_Oct3_Project1Solution.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
