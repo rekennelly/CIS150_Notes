@@ -71,83 +71,83 @@ int main() {
     /*************************************************
      ****  EXAMPLE 3: print equilateral triangle  ****
      *************************************************/
-//    
-//    int equilateralTriangleSize = 0;
-//    
-//    while (equilateralTriangleSize % 2 == 0) {
-//        cout << "How large of a triangle do you want? (odd numbers only)" << endl;
-//        cin >> equilateralTriangleSize;
-//    }
-//    
-//    int spacesToPrint = equilateralTriangleSize / 2;
-//    int starsToPrint = 1;
-//    int equilateralTriangleRows = (equilateralTriangleSize / 2) + 1;
-//    
-//    for ( int row = 0; row < equilateralTriangleRows; row++ ) {
-//        for (int space = 0; space < spacesToPrint; space++)
-//        {
-//            cout << " ";
-//        }
-//        for (int star = 0; star < starsToPrint; star++ )
-//        {
-//            cout << "*";
-//        }
-//        cout << endl;
-//        spacesToPrint--;
-//        starsToPrint += 2;
-//    }
+    
+    int equilateralTriangleSize = 0;
+    
+    while (equilateralTriangleSize % 2 == 0) {
+        cout << "How large of a triangle do you want? (odd numbers only)" << endl;
+        cin >> equilateralTriangleSize;
+    }
+    
+    int spacesToPrint = equilateralTriangleSize / 2;
+    int starsToPrint = 1;
+    int equilateralTriangleRows = (equilateralTriangleSize / 2) + 1;
+    
+    for ( int row = 0; row < equilateralTriangleRows; row++ ) {
+        for (int space = 0; space < spacesToPrint; space++)
+        {
+            cout << " ";
+        }
+        for (int star = 0; star < starsToPrint; star++ )
+        {
+            cout << "*";
+        }
+        cout << endl;
+        spacesToPrint--;
+        starsToPrint += 2;
+    }
     
     /*************************************************
      ****     EXAMPLE 4: rock, paper, scissors    ****
      *************************************************/
-    
-    char playAgain = 'Y';
-    
-    while (playAgain == 'Y') {
-        
-        char userChoice = ' ';
-        
-        while ((userChoice != 'R') && (userChoice != 'P') && (userChoice != 'S')) {
-            cout << "Pick [R]ock, [P]aper or [S]cissors " << endl;
-            cin >> userChoice;
-            userChoice = toupper(userChoice);
-        }
-        
-        int computerRandomChoice = rand() % 3;
-        char computerChoice;
-        
-        if (computerRandomChoice == 0)
-        {
-            computerChoice = 'R';
-        }
-        else if (computerRandomChoice == 1)
-        {
-            computerChoice = 'P';
-        }
-        else
-        {
-            computerChoice = 'S';
-        }
-        
-        if (computerChoice == userChoice)
-        {
-            cout << "It's a tie!" << endl;
-        }
-        else if ( (computerChoice == 'P' && userChoice == 'R')
-                || (computerChoice == 'R' && userChoice == 'S')
-                || (computerChoice == 'S' && userChoice == 'P'))
-        {
-            cout << "You lose!" << endl;
-        }
-        else
-        {
-            cout << "You win!" << endl;
-        }
-        
-        cout << "Do you want to play again? Y/N" << endl;
-        cin >> playAgain;
-        playAgain = toupper(playAgain);
-    }
-    
+//    
+//    char playAgain = 'Y';
+//    
+//    while (playAgain == 'Y') {
+//        
+//        char userChoice = ' ';
+//        
+//        while ((userChoice != 'R') && (userChoice != 'P') && (userChoice != 'S')) {
+//            cout << "Pick [R]ock, [P]aper or [S]cissors " << endl;
+//            cin >> userChoice;
+//            userChoice = toupper(userChoice);
+//        }
+//        
+//        int computerRandomChoice = rand() % 3;
+//        char computerChoice;
+//        
+//        if (computerRandomChoice == 0)
+//        {
+//            computerChoice = 'R';
+//        }
+//        else if (computerRandomChoice == 1)
+//        {
+//            computerChoice = 'P';
+//        }
+//        else
+//        {
+//            computerChoice = 'S';
+//        }
+//        
+//        if (computerChoice == userChoice)
+//        {
+//            cout << "It's a tie!" << endl;
+//        }
+//        else if ( (computerChoice == 'P' && userChoice == 'R')
+//                || (computerChoice == 'R' && userChoice == 'S')
+//                || (computerChoice == 'S' && userChoice == 'P'))
+//        {
+//            cout << "You lose!" << endl;
+//        }
+//        else
+//        {
+//            cout << "You win!" << endl;
+//        }
+//        
+//        cout << "Do you want to play again? Y/N" << endl;
+//        cin >> playAgain;
+//        playAgain = toupper(playAgain);
+//    }
+//    
     return 0;
 }
