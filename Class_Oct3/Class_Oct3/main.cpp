@@ -11,10 +11,14 @@
 using namespace std;
 
 int taxesOwedAtGivenBracket(double incomeToBeTaxed, double startOfBracket, double taxRate) {
+    // passing incomeToBeTaxed by reference changes that value in memory
+    
     double taxesOwed = (incomeToBeTaxed - startOfBracket) * taxRate;
+    incomeToBeTaxed = startOfBracket;
     return taxesOwed;
 }
 
 int main() {
+    
     return 0;
 }
