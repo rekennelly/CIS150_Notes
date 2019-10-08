@@ -4,6 +4,7 @@
 //
 //  Created by Rachel Kennelly on 10/8/19.
 //
+#include <vector>
 
 using namespace std;
 
