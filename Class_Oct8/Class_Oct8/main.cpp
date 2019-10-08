@@ -9,6 +9,7 @@
 #include <vector>
 #include <cmath>
 #include <string>
+#include "vectorfunctions.h"
 // ^^ these are pre-processor directives
 
 using namespace std;
@@ -16,11 +17,6 @@ using namespace std;
 int luckyNumber();
 int doublyLuckyNumber(int number);
 string capitalizeString(string name);
-
-double getAverageScore(vector<int> scores);
-double getMaxScore(vector<int> scores);
-double getMinScore(vector<int> scores);
-double getPopulationStandardDeviation(vector<int> scores);
 
 // overloading the function -- 2 functions with same names & different parameters
 void printTheDate(int day, int month, int year, int printStyle = 0) {
@@ -101,48 +97,3 @@ string capitalizeString(string name) {
     return name;
 }
 
-double getAverageScore(vector<int> scores) {
-    double total = 0;
-    for (int index = 0; index < scores.size(); index++ ) {
-        total += scores.at(index);
-    }
-    return total / scores.size();
-}
-
-double getMinScore(vector<int> scores) {
-    int minScore = scores.at(0);
-    for (int index = 1; index < scores.size(); index++ ) {
-        if (scores.at(index) < minScore) {
-            minScore = scores.at(index);
-        }
-    }
-    return minScore;
-}
-
-double getMaxScore(vector<int> scores) {
-    int maxScore = scores.at(0);
-    for (int index = 1; index < scores.size(); index++ ) {
-        if (scores.at(index) > maxScore) {
-            maxScore = scores.at(index);
-        }
-    }
-    return maxScore;
-}
-
-double getPopulationStandardDeviation(vector<int> scores) {
-    
-    double averageScore = getAverageScore(scores);
-    
-    double totalOfDifferenceFromAverageSquared = 0;
-    
-    for (int index = 0; index < scores.size(); index++) {
-        double difference = scores.at(index) - averageScore;
-        double differenceSquared = difference * difference;
-        
-        totalOfDifferenceFromAverageSquared += differenceSquared;
-    }
-    
-    double variance = totalOfDifferenceFromAverageSquared / scores.size();
-    
-    return sqrt(variance);
-}
