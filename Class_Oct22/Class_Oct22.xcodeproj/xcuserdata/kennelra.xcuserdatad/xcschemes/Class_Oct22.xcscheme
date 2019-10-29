@@ -46,7 +46,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
       customWorkingDirectory = "/Users/kennelra/cis150/CIS150_Notes/Class_Oct22/Class_Oct22"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"

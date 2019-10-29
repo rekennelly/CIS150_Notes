@@ -64,7 +64,29 @@ int main() {
         cout << scores.at(index) << endl;
     }
     
+    int sum = 0;
     
-
+    for (int score : scores) {
+        sum += score;
+    }
+    
+    int average = sum / scores.size();
+    int difference = 100 - average;
+    
+    ofstream outputFileStream;
+    outputFileStream.open("newScores.txt");
+    
+    if (!outputFileStream.is_open())
+    {
+        cout << "Something went wrong!!!!" << endl;
+        return 1;
+    }
+    
+    for (int score : scores) {
+        outputFileStream << score + difference << endl;
+    }
+    
+    outputFileStream.close();
+    
     return 0;
 }
